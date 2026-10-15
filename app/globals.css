@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* Tell Tailwind v4 to use class-based dark mode (managed by next-themes) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Register custom colors with Tailwind v4 theme system */
+@theme {
+  /* dymaptic brand colors */
+  --color-coral: #E24E42;
+  --color-coral-dark: #C13E34;
+  --color-coral-light: #F5756B;
+  --color-teal: #1D809F;
+  --color-teal-dark: #166680;
+  --color-teal-light: #2BA3C9;
+  --color-brand-gray: #A7A7A7;
+  --color-dark-bg: #1A1A1A;
+  --color-dark-bg-light: #2D2D2D;
+}
+
+/* Light mode (default) */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #6b7280;
+  --border-color: #e5e7eb;
+}
+
+/* Dark mode */
+.dark {
+  --background: #1A1A1A;
+  --foreground: #f3f4f6;
+  --text-primary: #f9fafb;
+  --text-secondary: #d1d5db;
+  --text-muted: #9ca3af;
+  --border-color: #374151;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-rubik), system-ui, sans-serif;
+}
+
+/* ArcGIS Map Overrides */
+.esri-view {
+  height: 100%;
+  width: 100%;
+}
+
+.esri-ui-corner {
+  font-family: var(--font-rubik), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-gray);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--teal);
+}

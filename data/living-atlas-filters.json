@@ -1,0 +1,13 @@
+{
+  "description": "Search filters for Living Atlas indexing. Each filter is run in order, with deduplication by item ID.",
+  "filters": [
+    "demographics",
+    "transportation",
+    "environment",
+    "counties",
+    "fire",
+    "land cover",
+    "elevation",
+    "bathemetry"
+  ]
+}
