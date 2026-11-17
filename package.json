@@ -48,7 +48,7 @@
     "eslint": "^9.39.2",
     "eslint-config-next": "^16.4.2",
     "h3-js": "^4.4.0",
-    "next": "^16.4.2",
+    "next": "^16.4.5",
     "next-themes": "^0.4.6",
     "openai": "^6.15.0",
     "postcss": "^8.5.6",
